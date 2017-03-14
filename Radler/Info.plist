@@ -48,5 +48,7 @@
     <string>Show your location on a map.</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>Your message goes here</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Show your location on the map</string>
 </dict>
 </plist>

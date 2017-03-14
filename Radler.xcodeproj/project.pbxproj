@@ -132,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				FBE133DD1E777BE2005B6D8E /* ViewControllers */,
+				FBE133DB1E77758A005B6D8E /* MapController.swift */,
 				FB84E4361E6515DC00C66D4B /* GoogleService-Info.plist */,
 				FBA918681E64C30100CB73E6 /* AppDelegate.swift */,
 				FBA9186E1E64C30100CB73E6 /* Main.storyboard */,
@@ -165,7 +166,6 @@
 			children = (
 				FBA9186A1E64C30100CB73E6 /* FirstViewController.swift */,
 				FBA9186C1E64C30100CB73E6 /* SecondViewController.swift */,
-				FBE133DB1E77758A005B6D8E /* MapController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
