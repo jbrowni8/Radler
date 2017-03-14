@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134C6DB73FA625AED11B7316 /* Pods_Radler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7ABF88AEA1FC19234BBE0D /* Pods_Radler.framework */; };
+		FB84E4371E6515DC00C66D4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB84E4361E6515DC00C66D4B /* GoogleService-Info.plist */; };
 		FBA918691E64C30100CB73E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA918681E64C30100CB73E6 /* AppDelegate.swift */; };
 		FBA9186B1E64C30100CB73E6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9186A1E64C30100CB73E6 /* FirstViewController.swift */; };
 		FBA9186D1E64C30100CB73E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9186C1E64C30100CB73E6 /* SecondViewController.swift */; };
@@ -15,6 +17,7 @@
 		FBA918751E64C30100CB73E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA918731E64C30100CB73E6 /* LaunchScreen.storyboard */; };
 		FBA918801E64C30100CB73E6 /* RadlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9187F1E64C30100CB73E6 /* RadlerTests.swift */; };
 		FBA9188B1E64C30100CB73E6 /* RadlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9188A1E64C30100CB73E6 /* RadlerUITests.swift */; };
+		FBE133DC1E77758A005B6D8E /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE133DB1E77758A005B6D8E /* MapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D022078EBFC7A14F1233883 /* Pods-Radler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Radler/Pods-Radler.release.xcconfig"; sourceTree = "<group>"; };
+		20128131A07E18B08F838A48 /* Pods-Radler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Radler/Pods-Radler.debug.xcconfig"; sourceTree = "<group>"; };
+		33F6D59AB9748F6FC4809186 /* Pods_RadlerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadlerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D0C4CDE5C25667018FEE64 /* Pods_RadlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7ABF88AEA1FC19234BBE0D /* Pods_Radler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Radler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB84E4361E6515DC00C66D4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FBA918651E64C30100CB73E6 /* Radler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA918681E64C30100CB73E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9186A1E64C30100CB73E6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		FBA918861E64C30100CB73E6 /* RadlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9188A1E64C30100CB73E6 /* RadlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadlerUITests.swift; sourceTree = "<group>"; };
 		FBA9188C1E64C30100CB73E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE133DB1E77758A005B6D8E /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				134C6DB73FA625AED11B7316 /* Pods_Radler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62940B265873308EA29AD723 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20128131A07E18B08F838A48 /* Pods-Radler.debug.xcconfig */,
+				0D022078EBFC7A14F1233883 /* Pods-Radler.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97B95A72EFBD6B09FA789A09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD7ABF88AEA1FC19234BBE0D /* Pods_Radler.framework */,
+				B9D0C4CDE5C25667018FEE64 /* Pods_RadlerTests.framework */,
+				33F6D59AB9748F6FC4809186 /* Pods_RadlerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FBA9185C1E64C30000CB73E6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				FBA9187E1E64C30100CB73E6 /* RadlerTests */,
 				FBA918891E64C30100CB73E6 /* RadlerUITests */,
 				FBA918661E64C30100CB73E6 /* Products */,
+				62940B265873308EA29AD723 /* Pods */,
+				97B95A72EFBD6B09FA789A09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +131,9 @@
 		FBA918671E64C30100CB73E6 /* Radler */ = {
 			isa = PBXGroup;
 			children = (
+				FBE133DD1E777BE2005B6D8E /* ViewControllers */,
+				FB84E4361E6515DC00C66D4B /* GoogleService-Info.plist */,
 				FBA918681E64C30100CB73E6 /* AppDelegate.swift */,
-				FBA9186A1E64C30100CB73E6 /* FirstViewController.swift */,
-				FBA9186C1E64C30100CB73E6 /* SecondViewController.swift */,
 				FBA9186E1E64C30100CB73E6 /* Main.storyboard */,
 				FBA918711E64C30100CB73E6 /* Assets.xcassets */,
 				FBA918731E64C30100CB73E6 /* LaunchScreen.storyboard */,
@@ -128,6 +160,16 @@
 			path = RadlerUITests;
 			sourceTree = "<group>";
 		};
+		FBE133DD1E777BE2005B6D8E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBA9186A1E64C30100CB73E6 /* FirstViewController.swift */,
+				FBA9186C1E64C30100CB73E6 /* SecondViewController.swift */,
+				FBE133DB1E77758A005B6D8E /* MapController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBA9188F1E64C30100CB73E6 /* Build configuration list for PBXNativeTarget "Radler" */;
 			buildPhases = (
+				CDD565F1C87B3E16E8BCFACE /* [CP] Check Pods Manifest.lock */,
 				FBA918611E64C30000CB73E6 /* Sources */,
 				FBA918621E64C30000CB73E6 /* Frameworks */,
 				FBA918631E64C30000CB73E6 /* Resources */,
+				1ED3DBE893DC7DE4F50E19E9 /* [CP] Embed Pods Frameworks */,
+				85F6735748E2B56CC68E4FDD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA918751E64C30100CB73E6 /* LaunchScreen.storyboard in Resources */,
+				FB84E4371E6515DC00C66D4B /* GoogleService-Info.plist in Resources */,
 				FBA918721E64C30100CB73E6 /* Assets.xcassets in Resources */,
 				FBA918701E64C30100CB73E6 /* Main.storyboard in Resources */,
 			);
@@ -260,11 +306,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1ED3DBE893DC7DE4F50E19E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Radler/Pods-Radler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85F6735748E2B56CC68E4FDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Radler/Pods-Radler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDD565F1C87B3E16E8BCFACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBA918611E64C30000CB73E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE133DC1E77758A005B6D8E /* MapController.swift in Sources */,
 				FBA9186D1E64C30100CB73E6 /* SecondViewController.swift in Sources */,
 				FBA918691E64C30100CB73E6 /* AppDelegate.swift in Sources */,
 				FBA9186B1E64C30100CB73E6 /* FirstViewController.swift in Sources */,
@@ -415,6 +510,7 @@
 		};
 		FBA918901E64C30100CB73E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20128131A07E18B08F838A48 /* Pods-Radler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 795S9ZJP3Z;
@@ -428,6 +524,7 @@
 		};
 		FBA918911E64C30100CB73E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D022078EBFC7A14F1233883 /* Pods-Radler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 795S9ZJP3Z;
@@ -516,6 +613,7 @@
 				FBA918911E64C30100CB73E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBA918921E64C30100CB73E6 /* Build configuration list for PBXNativeTarget "RadlerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +622,7 @@
 				FBA918941E64C30100CB73E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBA918951E64C30100CB73E6 /* Build configuration list for PBXNativeTarget "RadlerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +631,7 @@
 				FBA918971E64C30100CB73E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
