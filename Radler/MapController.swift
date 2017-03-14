@@ -86,7 +86,7 @@ class MapController: UIViewController {
                     //text = String(likelihood.place.openNowStatus.rawValue)
                     if likelihood.place.types.contains("bar")
                     || likelihood.place.types.contains("restaurant")
-                        || likelihood.place.types.contains("food") {
+                    || likelihood.place.types.contains("food") {
                         print("\(likelihood.place)")
 
                     }
