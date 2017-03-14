@@ -70,7 +70,6 @@ class MapController: UIViewController {
     // Populate the array with the list of likely places.
     func listLikelyPlaces() {
         
-        var text : String = ""
         // Clean up from previous sessions.
         likelyPlaces.removeAll()
         
@@ -84,11 +83,12 @@ class MapController: UIViewController {
             // Get likely places and add to the list.
             if let likelihoodList = placeLikelihoods {
                 for likelihood in likelihoodList.likelihoods {
-                    text = String(likelihood.place.types[0])
-                    print("\(text)")
-                    if text != "street_address" {
-                        let place = likelihood.place
-                        self.likelyPlaces.append(place)
+                    //text = String(likelihood.place.openNowStatus.rawValue)
+                    if likelihood.place.types.contains("bar")
+                    || likelihood.place.types.contains("restaurant")
+                        || likelihood.place.types.contains("food") {
+                        print("\(likelihood.place)")
+
                     }
                 }
             }
