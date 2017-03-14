@@ -10,7 +10,7 @@ class MapController: UIViewController {
     var currentLocation: CLLocation?
     var mapView: GMSMapView!
     var placesClient: GMSPlacesClient!
-    var zoomLevel: Float = 18.0
+    var zoomLevel: Float = 17.0
     
     // An array to hold the list of likely places.
     var likelyPlaces: [GMSPlace] = []
@@ -19,7 +19,7 @@ class MapController: UIViewController {
     var selectedPlace: GMSPlace?
     
     // A default location to use when location permission is not granted.
-    let defaultLocation = CLLocation(latitude: -33.869405, longitude: 151.199)
+    let defaultLocation = CLLocation(latitude: 38.915829, longitude: -77.034488)
     
     // Update the map once the user has made their selection.
     @IBAction func unwindToMain(segue: UIStoryboardSegue) {
