@@ -87,12 +87,22 @@ class MapController: UIViewController {
                     if likelihood.place.types.contains("bar")
                     || likelihood.place.types.contains("restaurant")
                     || likelihood.place.types.contains("food") {
-                        print("\(likelihood.place)")
-
+                        self.likelyPlaces.append(likelihood.place)
                     }
                 }
             }
+            self.populateMap(likelyPlaces: self.likelyPlaces)
         })
+    }
+    
+    func populateMap(likelyPlaces : [GMSPlace]) -> Void {
+        for place in likelyPlaces {
+           //print(place)
+            let marker = GMSMarker(position: (place.coordinate))
+            marker.title = place.name
+            marker.snippet = place.formattedAddress
+            marker.map = mapView
+        }
     }
     
 }
