@@ -6,6 +6,8 @@ import GooglePlaces
 
 class MapController: UIViewController {
     
+    var place = GMSUserAddedPlace()
+    
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     var mapView: GMSMapView!
@@ -172,6 +174,24 @@ extension MapController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         locationManager.stopUpdatingLocation()
         print("Error: \(error)")
+    }
+    
+    @IBAction func unwindWithDataToMain(segue: UIStoryboardSegue) {
+        
+        if let address = place.address?.description {
+            let geocoder = CLGeocoder()
+            geocoder.geocodeAddressString(address) { (placemarks, error) in
+                if let placemarks = placemarks {
+                    if placemarks.count != 0 {
+                        self.place.coordinate = (placemarks.first!.location?.coordinate)!
+                        let marker = GMSMarker(position: (self.place.coordinate))
+                        marker.title = self.place.name
+                        marker.snippet = self.place.address
+                        marker.map = self.mapView
+                    }
+                }
+            }
+        }
     }
 }
 
