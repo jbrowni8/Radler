@@ -27,10 +27,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="PGP-ns-W0S" secondAttribute="trailing" id="4ME-0i-Vs4"/>
-                            <constraint firstItem="PGP-ns-W0S" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="F0x-ms-aUR"/>
-                            <constraint firstItem="PGP-ns-W0S" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="PAw-jp-COq"/>
-                            <constraint firstItem="PGP-ns-W0S" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vek-aK-odY"/>
+                            <constraint firstItem="PGP-ns-W0S" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Ggz-qt-txy"/>
+                            <constraint firstAttribute="trailing" secondItem="PGP-ns-W0S" secondAttribute="trailing" id="Zw2-ID-Y1T"/>
+                            <constraint firstItem="PGP-ns-W0S" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fN4-Ca-DdG"/>
+                            <constraint firstItem="PGP-ns-W0S" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="lvx-1W-isf"/>
                         </constraints>
                     </view>
                 </viewController>

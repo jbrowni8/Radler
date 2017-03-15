@@ -18,9 +18,7 @@ class FirstViewController: UIViewController {
     var place = GMSUserAddedPlace()
     
     @IBAction func getNearbyPlaces(_ sender: UIButton) {
-        
-        print(place.description)
-        
+                
         let config = GMSPlacePickerConfig(viewport: nil)
         let placePicker = GMSPlacePicker(config: config)
         
@@ -51,6 +49,9 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboardWhenTappedAround()
+
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,5 +62,16 @@ class FirstViewController: UIViewController {
     @IBAction func unwindToMain() {
         performSegue(withIdentifier: "unwindToMain", sender: nil)
         
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
